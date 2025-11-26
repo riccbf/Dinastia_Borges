@@ -1,0 +1,379 @@
+<!-- Dinastia Borges - Arquivos HTML reunidos para copiar no GitHub -->
+
+<!-- ==================== index.html ==================== -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Dinastia Borges</title>
+<style>
+/* ======= DARK MODE BORGES — Azul Royal & Dourado ======= */
+body {
+    font-family: 'Georgia', serif;
+    margin: 40px;
+    line-height: 1.7;
+    background: #0a0f2c; /* azul royal profundo */
+    color: #e8c26a; /* dourado suave */
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #f0d78a; /* dourado luminoso */
+}
+
+h2, h3 {
+    color: #d9b865;
+}
+
+a {
+    color: #f4dd96;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.lema {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f1d88f;
+}
+
+/* Brasão adaptado para dark mode */
+.brasao {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.brasao svg {
+    width: 120px;
+    height: 120px;
+    stroke: #f1d88f; /* dourado */
+}
+</style>
+</head>
+<body>
+
+<h1>🔱 DINASTIA BORGES</h1>
+<h2>Sistema de Identidade, Clareza e Poder Pessoal</h2>
+
+<p>
+A Dinastia Borges é uma incubadora cognitiva.<br>
+Um método de vida baseado em disciplina, clareza, execução e estratégia.<br>
+Ela transforma complexidade em liquidez através de estrutura, presença e gestão de si.
+</p>
+
+<div class="links">
+    <h3>Documentos Fundamentais</h3>
+    <a href="manifesto.html">📜 Manifesto</a>
+    <a href="constituicao.html">⚖️ Constituição</a>
+    <a href="codigo.html">🛡 Código da Dinastia</a>
+    <a href="principios.html">🔰 Princípios</a>
+    <a href="lema.html">🜂 Lema</a>
+</div>
+
+<div class="lema"><b>EX SAPIENTIA, IMPERIUM</b><br>Do Conhecimento, o Poder.</div>
+
+<!-- Música de fundo épica (substitua a URL por seu arquivo MP3 no GitHub) -->
+<audio id="bgm" autoplay loop>
+    <source src="epic-theme.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+// Fade-in suave ao carregar
+const audio = document.getElementById('bgm');
+audio.volume = 0;
+let vol = 0;
+
+const fade = setInterval(() => {
+    if (vol < 0.4) { // volume máximo suave
+        vol += 0.01;
+        audio.volume = vol;
+    } else {
+        clearInterval(fade);
+    }
+}, 120);
+</script>
+
+</body>
+</html>
+
+
+<!-- ==================== manifesto.html ==================== -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Manifesto da Dinastia Borges</title>
+<style>
+    body { font-family: 'Georgia', serif; margin: 40px; background: #fff; color: #222; }
+    h1 { text-align: center; margin-bottom: 10px; }
+    h2 { color: #444; margin-top: 40px; }
+</style>
+</head>
+<body>
+
+<h1>📜 Manifesto da Dinastia Borges</h1>
+
+<p>A Dinastia Borges nasce como um ato de consciência. Não como título, mas como estrutura.<br>
+Não como fantasia, mas como método.</p>
+
+<p>Ela existe para afirmar três verdades fundamentais:</p>
+
+<h2>1. A clareza supera o caos.</h2>
+<p>A mente ordenada vence a mente dispersa.</p>
+
+<h2>2. A disciplina cria o improvável.</h2>
+<p>Pequenos rituais moldam grandes destinos.</p>
+
+<h2>3. A estratégia é o verdadeiro poder.</h2>
+<p>Ver o movimento antes do movimento.</p>
+
+<p>A Dinastia Borges não é sobre sangue, sobrenome ou mitologia.<br>
+É sobre <b>estrutura + complexidade → liquidez</b>.</p>
+
+<p><b>Ex Sapientia, Imperium.</b></p>
+
+</body>
+</html>
+
+
+<!-- ==================== constituicao.html ==================== -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Constituição da Dinastia Borges</title>
+<style>
+    body { font-family: 'Georgia', serif; margin: 40px; line-height: 1.6; }
+    h1, h2 { text-align: center; }
+    h3 { margin-top: 30px; }
+</style>
+</head>
+<body>
+
+<h1>⚖️ Constituição da Dinastia Borges</h1>
+
+<h3>I — Juramento Dinástico</h3>
+<p>
+“Pelo propósito que me guia,<br>
+pela disciplina que me molda,<br>
+pela clareza que me ancora,<br>
+eu manifesto a Dinastia Borges em cada ato.<br>
+<b>Ex Sapientia, Imperium.</b>”
+</p>
+
+<h3>II — Estrutura da Dinastia</h3>
+<p>A Dinastia opera em três pilares herméticos:</p>
+
+<ul>
+<li><b>Keter (Visão)</b> — a origem, o propósito.</li>
+<li><b>Binah (Estrutura)</b> — a ordem, o método.</li>
+<li><b>Malkuth (Execução)</b> — a manifestação, o ato.</li>
+</ul>
+
+<h3>III — Rito Matinal</h3>
+<ul>
+<li>Silêncio (2 min)</li>
+<li>Lema</li>
+<li>Regra do Dia</li>
+<li>Movimento Essencial (M1)</li>
+<li>Ação imediata (5 min)</li>
+</ul>
+
+<h3>IV — Rito Noturno</h3>
+<ul>
+<li>O que foi claro?</li>
+<li>O que foi disciplinado?</li>
+<li>O que foi legado?</li>
+<li>1 acerto e 1 ajuste</li>
+<li>Encerrar com o lema</li>
+</ul>
+
+<h3>V — Código de Guerra</h3>
+<ul>
+<li>Não reagir rápido.</li>
+<li>Falar pouco.</li>
+<li>Pensar em eixos.</li>
+<li>Mirar o resultado.</li>
+<li>Manter dignidade.</li>
+</ul>
+
+<h3>VI — Livro Negro dos Erros</h3>
+<p>A Dinastia considera apenas três erros reais:</p>
+
+<ul>
+<li>Explicar demais.</li>
+<li>Agir sem propósito.</li>
+<li>Romper o próprio ritmo.</li>
+</ul>
+
+<h3>VII — Propósito</h3>
+<p>Gerar clareza.<br>
+Criar estrutura.<br>
+Transformar complexidade em liquidez.</p>
+
+</body>
+</html>
+
+
+<!-- ==================== codigo.html ==================== -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Código da Dinastia Borges</title>
+<style>
+    body { font-family: 'Georgia', serif; margin: 40px; line-height: 1.7; }
+    h1 { text-align: center; }
+</style>
+</head>
+<body>
+
+<h1>🛡 Código da Dinastia Borges</h1>
+
+<p><b>1.</b> Clareza acima de emoção.</p>
+<p><b>2.</b> Propósito acima de impulso.</p>
+<p><b>3.</b> Disciplina acima de motivação.</p>
+<p><b>4.</b> Presença acima de ansiedade.</p>
+<p><b>5.</b> Execução acima de teoria.</p>
+<p><b>6.</b> Silêncio estratégico como arma.</p>
+<p><b>7.</b> Estrutura como base de poder.</p>
+<p><b>8.</b> Complexidade organizada como vantagem.</p>
+<p><b>9.</b> Risco Zero como política.</p>
+<p><b>10.</b> Legado como linha do tempo.</p>
+
+</body>
+</html>
+
+
+<!-- ==================== principios.html ==================== -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Princípios da Dinastia Borges</title>
+<style>
+    body { font-family: 'Georgia', serif; margin: 40px; line-height: 1.7; }
+    h1 { text-align: center; }
+</style>
+</head>
+<body>
+
+<h1>🔰 Princípios da Dinastia Borges</h1>
+
+<h3>Clareza</h3>
+<p>A lâmina que corta a confusão.</p>
+
+<h3>Disciplina</h3>
+<p>A ponte entre intenção e realidade.</p>
+
+<h3>Presença</h3>
+<p>O estado que elimina o passado e silencia o futuro.</p>
+
+<h3>Estratégia</h3>
+<p>A arte de mover antes do movimento.</p>
+
+<h3>Execução</h3>
+<p>A prova real da identidade Borges.</p>
+
+</body>
+</html>
+
+
+<!-- ==================== lema.html ==================== -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Lema da Dinastia Borges</title>
+<style>
+    body { font-family: 'Georgia', serif; margin: 40px; line-height: 1.7; text-align: center; }
+    h1 { letter-spacing: 2px; }
+</style>
+</head>
+<body>
+
+<h1>🜂 EX
+
+<!-- ==================== borges.css (CSS global) ==================== -->
+<style>
+/* Fonte e layout geral */
+body {
+    font-family: 'Georgia', serif;
+    margin: 40px;
+    line-height: 1.7;
+    background: #fafafa;
+    color: #222;
+}
+
+/* Títulos principais */
+h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    color: #444;
+}
+
+/* Links */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Containers */
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Lema */
+.lema {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Brasão */
+.brasao {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.brasao svg {
+    width: 120px;
+    height: 120px;
+}
+</style>
+
+
+<!-- ==================== brasao-borges.svg ==================== -->
+<!-- Brasão minimalista da Dinastia Borges (copie para um arquivo brasao.svg se quiser separar) -->
+<div class="brasao">
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="60" cy="60" r="55" stroke="#000" stroke-width="3" fill="none" />
+    <path d="M 60 20 L 90 60 L 60 100 L 30 60 Z" stroke="#000" stroke-width="3" fill="none"/>
+    <line x1="60" y1="35" x2="60" y2="85" stroke="#000" stroke-width="3"/>
+    <line x1="35" y1="60" x2="85" y2="60" stroke="#000" stroke-width="3"/>
+</svg>
+</div>
