@@ -1,1 +1,96 @@
-<!doctype html><html><head><link rel='stylesheet' href='borges.css'></head><body><h1>Dinastia Borges</h1></body></html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dinastia Borges</title>
+<link rel="stylesheet" href="borges.css">
+</head>
+<body>
+<div class="container">
+<header>
+<div class="brasao" aria-hidden="true">
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+<circle cx="60" cy="60" r="54" stroke-width="2.6" stroke="currentColor" fill="none" />
+<path d="M 60 18 L 92 60 L 60 102 L 28 60 Z" stroke-width="2.6" stroke="currentColor" fill="none" />
+<line x1="60" y1="34" x2="60" y2="86" stroke-width="2.6" stroke="currentColor" />
+<line x1="36" y1="60" x2="84" y2="60" stroke-width="2.6" stroke="currentColor" />
+</svg>
+</div>
+
+
+<h1>DINASTIA BORGES</h1>
+<h2>Sistema de Identidade, Clareza e Poder Pessoal</h2>
+<div class="lema">EX SAPIENTIA, IMPERIUM — Do Conhecimento, o Poder.</div>
+</header>
+
+
+<nav class="nav">
+<a href="manifesto.html">Manifesto</a>
+<a href="constituicao.html">Constituição</a>
+<a href="codigo.html">Código</a>
+<a href="principios.html">Princípios</a>
+<a href="lema.html">Lema</a>
+</nav>
+
+
+<section>
+<h3>O que é a Dinastia Borges</h3>
+<p>A Dinastia Borges é uma incubadora cognitiva: um método de vida que converte complexidade em liquidez através de disciplina, clareza, execução e estrutura.</p>
+</section>
+
+
+<section>
+<h3>Documentos Fundamentais</h3>
+<ul>
+<li>Manifesto</li>
+<li>Constituição</li>
+<li>Código</li>
+<li>Princípios</li>
+<li>Lema</li>
+</ul>
+</section>
+
+
+<div class="footer">Fundação Dinastia Borges • Versão 3.0</div>
+</div>
+
+
+<audio id="bgm" loop preload="auto">
+<source src="epic-theme.mp3" type="audio/mpeg">
+</audio>
+
+
+<div class="controls">
+<span style="color:var(--gold-weak)">Trono Sonoro</span>
+<button id="play">►</button>
+<button id="pause">❚❚</button>
+<button id="mute">🔈</button>
+</div>
+
+
+<script>
+(function(){
+const audio = document.getElementById('bgm');
+const play = document.getElementById('play');
+const pause = document.getElementById('pause');
+const mute = document.getElementById('mute');
+const targetVol = 0.32;
+audio.volume = 0;
+
+
+function fadeIn(){ let v=0; audio.play(); let x=setInterval(()=>{v+=0.01; audio.volume=v; if(v>=targetVol) clearInterval(x)},100); }
+function fadeOut(){ let v=audio.volume; let x=setInterval(()=>{v-=0.02; audio.volume=v; if(v<=0){audio.pause(); clearInterval(x);}},80); }
+
+
+play.onclick = ()=>fadeIn();
+pause.onclick = ()=>fadeOut();
+mute.onclick = ()=>{ audio.muted=!audio.muted; mute.textContent = audio.muted ? '🔇' : '🔈'; };
+
+
+window.onload = ()=>setTimeout(()=>fadeIn(),700);
+})();
+</script>
+
+
+</body>
+</html>
